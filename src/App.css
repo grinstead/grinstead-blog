@@ -1,4 +1,6 @@
 
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
 :root {
   --dark: #2a3d45;
   --light: #ddc9b4;
@@ -9,20 +11,28 @@
   --text: #000000;
 }
 
+@supports (font-variation-settings: normal) {
+  body { font-family: 'Fira Code VF', monospace; }
+}
+
 body {
-  background-color: var(--dark);
-  color: var(--text);
   margin: 0;
   padding: 0;
   height: 100vh;
+
+  font-family: 'Fira Code', monospace;
+  background-color: var(--dark);
+  color: var(--text);
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 /* Container for the paper */
 .paper {
-  width: 8.5in;
+  max-width: 1280px;
   margin: auto;
   background: var(--paper);
   border: 1px solid #ccc;

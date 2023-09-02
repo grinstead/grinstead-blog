@@ -5,9 +5,9 @@ function App() {
 
   return (
     <div class="paper">
-      <div class="header">Joe Grinstead's Code Blog</div>
+      <h1>Joe Grinstead's Code Blog</h1>
       <div class="body">
-        <p>Concept concept concept</p>
+        <p>Concept concept concept x-&gt;4</p>
       </div>
       <div class="footer">Blog Post Footer</div>
     </div>
